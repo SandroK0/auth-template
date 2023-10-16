@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+:root {
+  --primary: #5429ff;
+  --secondary: #344054;
+  --bg: #cbcce8;
+  --accent: #667085;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+
+}
+body {
+  margin: 0;
+  padding: 32px;
+}
+
+.mainContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: nowrap;
+  
+  gap: 0 150px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0 13px;
+  cursor: pointer;
+}
+
+.authContainer {
+  width: 360px;
+  height: 500px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.form-group label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+
+  color: #344054;
+}
+
+.form-group input {
+  height: 44px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  padding: 14px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+}
+
+h1 {
+  /* Headline */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  margin-bottom: 8px;
+
+  color: var(--secondary);
+}
+
+.authContainer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-bottom: 50px;
+
+  color: var(--accent);
+}
+
+.remember-forgot-container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary);
+}
+
+.remember-forgot-container a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  /* identical to box height, or 143% */
+
+  /* Primary Color */
+  color: var(--primary);
+}
+
+.remember-forgot-container input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  /* Accent 1 */
+  border: 1px solid #d0d5dd;
+  border-radius: 4px;
+}
+.remember-forgot-container label{
+  cursor: pointer;
+
+}
+
+.buttonsContainer {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+.signInBtn {
+  /* Auto layout */
+
+  margin-bottom: 16px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  background-color: var(--primary);
+
+  height: 44px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+}
+
+.signInBtn:hover{
+  opacity: 0.9;
+}
+
+.googleBtn {
+  /* Auto layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  background-color: white;
+  cursor: pointer;
+
+  gap: 9px;
+
+  height: 44px;
+  width: 100%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: var(--secondary);
+
+
+}
+
+.googleBtn:hover{
+  opacity: 0.8;
+}
+
+.signUpContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+
+
+  color: var(--secondary);
+}
+
+.signUpContainer span{
+  color: var(--primary);
+  cursor: pointer;
+  margin-left: 2px;
+
+}
+
+@media screen and (max-width:500px) {
+  .mainContainer{
+    flex-direction: column;
+  }
+  .authContainer{
+    width: 300px;
+  }
+  .form-group{
+    width: 300px;
+  }
+  .cover{
+    visibility: collapse;
+  }
+  h1{
+    margin-top: 0;
+  }
+
+  body{
+    padding: 0;
+  }
+
+  .logo{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    margin-bottom: 56px;
+    margin-top: 88px;
+  }
+  
+}
